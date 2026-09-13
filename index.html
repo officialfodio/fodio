@@ -8,7 +8,7 @@
 
   <meta
     name="description"
-    content="Fodio makes food ordering easier in towns and villages. Discover local food, order easily, and track your delivery."
+    content="Fodio makes food ordering easier in towns and villages."
   >
 
   <link
@@ -22,36 +22,24 @@
 
 <body>
 
-  <!-- =========================
-       NAVIGATION
-  ========================== -->
-  <header class="navbar" id="top">
-    <div class="container nav-inner">
+  <!-- CURSOR -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
 
-      <a
-        href="#top"
-        class="brand"
-        aria-label="Fodio home"
-      >
-        <img
-          src="Fodio Official Logo (t).png"
-          alt="Fodio"
-        >
+  <!-- HEADER -->
+  <header class="navbar" id="top">
+    <div class="nav-inner">
+
+      <a href="#top" class="brand">
+        <img src="Fodio Official Logo (t).png" alt="Fodio">
       </a>
 
-      <nav
-        class="nav-links"
-        aria-label="Primary navigation"
-      >
+      <nav class="nav-links">
         <a href="#features">Features</a>
         <a href="#app">App</a>
         <a href="#about">About</a>
-
-        <a
-          href="#download"
-          class="nav-button"
-        >
-          Get Fodio
+        <a href="#download" class="nav-button">
+          Get Fodio <span>↗</span>
         </a>
       </nav>
 
@@ -61,57 +49,46 @@
 
   <main>
 
-    <!-- =========================
-         HERO
-    ========================== -->
+    <!-- HERO -->
     <section class="hero">
 
-      <div class="container hero-grid">
+      <div class="hero-glow glow-a"></div>
+      <div class="hero-glow glow-b"></div>
+
+      <div class="hero-grid">
 
         <div class="hero-content">
 
           <div class="hero-badge">
-            <span></span>
+            <span class="badge-dot"></span>
             Built for local food
           </div>
-
-          <img
-            class="hero-logo"
-            src="Fodio Official Logo (t).png"
-            alt="Fodio"
-          >
 
           <h1>
             What are you
             <span>eating today?</span>
           </h1>
 
-          <p>
+          <p class="hero-description">
             Discover local food, order from nearby shops,
             and get your meal delivered without the hassle.
           </p>
 
           <div class="hero-actions">
 
-            <a
-              href="#features"
-              class="primary-button"
-            >
+            <a href="#features" class="primary-button magnetic">
               Explore Fodio
               <span>↗</span>
             </a>
 
-            <a
-              href="#app"
-              class="secondary-button"
-            >
+            <a href="#app" class="secondary-button magnetic">
               Discover the app
             </a>
 
           </div>
 
           <div class="hero-note">
-            Food ordering, built for everyday life.
+            FOOD ORDERING · LOCAL SHOPS · EASY DELIVERY
           </div>
 
         </div>
@@ -119,25 +96,31 @@
 
         <div class="hero-visual">
 
-          <div class="hero-glow"></div>
+          <div class="hero-orbit orbit-one"></div>
+          <div class="hero-orbit orbit-two"></div>
 
-          <div class="hero-ring hero-ring-one"></div>
-          <div class="hero-ring hero-ring-two"></div>
+          <div class="hero-image-glow"></div>
 
           <img
             src="home_screen_image.png"
             alt="Fodio food ordering app"
-            class="hero-phone"
+            class="hero-app-image"
           >
 
-          <div class="floating-card floating-card-one">
-            <strong>Local favourites</strong>
-            <span>Near you</span>
+          <div class="hero-floating-card hero-food-card">
+            <div class="mini-icon">⌁</div>
+            <div>
+              <strong>Local favourites</strong>
+              <small>Near you</small>
+            </div>
           </div>
 
-          <div class="floating-card floating-card-two">
-            <strong>Order tracking</strong>
-            <span>Live updates</span>
+          <div class="hero-floating-card hero-order-card">
+            <div class="mini-icon orange">✓</div>
+            <div>
+              <strong>Order tracking</strong>
+              <small>Live updates</small>
+            </div>
           </div>
 
         </div>
@@ -147,43 +130,29 @@
     </section>
 
 
-    <!-- =========================
-         TRUST STRIP
-    ========================== -->
+    <!-- TRUST -->
     <section class="trust-strip">
 
-      <div class="container trust-grid">
+      <div class="trust-inner">
 
-        <div class="trust-item">
-          <span class="trust-number">01</span>
-          <div>
-            <strong>LOCAL FIRST</strong>
-            <span>Built for small towns</span>
-          </div>
+        <div>
+          <strong>LOCAL FIRST</strong>
+          <span>Built for small towns</span>
         </div>
 
-        <div class="trust-item">
-          <span class="trust-number">02</span>
-          <div>
-            <strong>EASY ORDERING</strong>
-            <span>Simple by design</span>
-          </div>
+        <div>
+          <strong>EASY ORDERING</strong>
+          <span>Simple by design</span>
         </div>
 
-        <div class="trust-item">
-          <span class="trust-number">03</span>
-          <div>
-            <strong>DELIVERY</strong>
-            <span>From shop to doorstep</span>
-          </div>
+        <div>
+          <strong>DELIVERY</strong>
+          <span>From shop to doorstep</span>
         </div>
 
-        <div class="trust-item">
-          <span class="trust-number">04</span>
-          <div>
-            <strong>PICKUP</strong>
-            <span>Order ahead</span>
-          </div>
+        <div>
+          <strong>PICKUP</strong>
+          <span>Order ahead</span>
         </div>
 
       </div>
@@ -191,132 +160,131 @@
     </section>
 
 
-    <!-- =========================
-         FEATURES
-    ========================== -->
-    <section
-      class="features"
-      id="features"
-    >
+    <!-- FEATURES -->
+    <section class="features" id="features">
 
-      <div class="container">
+      <div class="section-heading">
 
-        <div class="section-heading">
+        <div class="eyebrow">
+          WHY FODIO
+        </div>
 
-          <div class="eyebrow">
-            WHY FODIO
+        <h2>
+          Everything you need to
+          <span>find your next meal.</span>
+        </h2>
+
+        <p>
+          A simpler way to discover food, place orders,
+          and stay connected from checkout to doorstep.
+        </p>
+
+      </div>
+
+
+      <!-- DISCOVERY -->
+      <div class="feature-showcase">
+
+        <div class="feature-copy">
+
+          <div class="feature-copy-number">
+            01
           </div>
 
-          <h2>
-            Everything you need to
-            <span>find your next meal.</span>
-          </h2>
+          <div class="feature-number-label">
+            FOOD DISCOVERY
+          </div>
+
+          <h3>
+            Discover
+            <span>local food.</span>
+          </h3>
 
           <p>
-            A simpler way to discover food, place orders,
-            and stay connected from checkout to doorstep.
+            Explore food from local shops and home-based
+            sellers around you. Find something you love
+            without scrolling through endless options.
           </p>
 
-        </div>
+          <div class="feature-line"></div>
 
-
-        <!-- FOOD DISCOVERY -->
-        <div class="feature-showcase">
-
-          <div class="feature-copy">
-
-            <div class="feature-number">
-              01 / FOOD DISCOVERY
-            </div>
-
-            <h3>
-              Discover
-              <span>local food.</span>
-            </h3>
-
-            <p>
-              Explore food from local shops and home-based
-              sellers around you. Find something you love
-              without scrolling through endless options.
-            </p>
-
-            <div class="feature-line"></div>
-
-            <div class="feature-small">
-              Fresh choices. Local sellers. One place.
-            </div>
-
-          </div>
-
-
-          <div class="food-card-visual">
-
-            <div class="visual-glow"></div>
-
-            <img
-              src="food_card_image.png"
-              alt="Fodio food discovery"
-            >
-
+          <div class="feature-label">
+            FRESH CHOICES · LOCAL SELLERS · ONE PLACE
           </div>
 
         </div>
 
 
-        <!-- FEATURE CARDS -->
-        <div class="feature-cards">
+        <div class="food-card-visual">
 
-          <article class="feature-card">
+          <div class="food-card-glow"></div>
 
-            <div class="card-top">
-              <span>02</span>
-              <span>DISCOVER</span>
-            </div>
+          <img
+            src="food_card_image.png"
+            alt="Fodio food discovery"
+            class="food-card-image"
+          >
 
-            <h3>
-              Food
-              <span>around you.</span>
-            </h3>
+        </div>
 
-            <p>
-              Find local dishes and food sellers
-              available in your area.
-            </p>
-
-            <div class="card-arrow">↗</div>
-
-          </article>
+      </div>
 
 
-          <article class="feature-card">
+      <!-- FEATURE CARDS -->
+      <div class="feature-grid">
 
-            <div class="card-top">
-              <span>03</span>
-              <span>ORDER</span>
-            </div>
+        <article class="feature-card">
 
-            <h3>
-              Easy
-              <span>ordering.</span>
-            </h3>
+          <div class="card-top">
+            <span>02</span>
+            <span>DISCOVER</span>
+          </div>
 
-            <p>
-              Add your favourites, review your cart,
-              and place your order in a few taps.
-            </p>
+          <h3>
+            Food
+            <span>around you.</span>
+          </h3>
 
-            <div class="card-arrow">↗</div>
+          <p>
+            Find local dishes and food sellers
+            available in your area.
+          </p>
 
-          </article>
+          <div class="card-arrow">↗</div>
+
+        </article>
 
 
-          <article class="feature-card">
+        <article class="feature-card">
 
-            <div class="card-top">
-              <span>04</span>
-              <span>DELIVERY</span>
-            </div>
+          <div class="card-top">
+            <span>03</span>
+            <span>ORDER</span>
+          </div>
 
+          <h3>
+            Easy
+            <span>ordering.</span>
+          </h3>
+
+          <p>
+            Add your favourites, review your cart,
+            and place your order in a few taps.
+          </p>
+
+          <div class="card-arrow">↗</div>
+
+        </article>
+
+
+        <article class="feature-card feature-card-wide">
+
+          <div class="card-top">
+            <span>04</span>
+            <span>DELIVERY</span>
+          </div>
+
+          <div>
             <h3>
               From shop
               <span>to doorstep.</span>
@@ -326,29 +294,27 @@
               Choose delivery or pickup and follow
               your order every step of the way.
             </p>
+          </div>
 
-            <div class="card-arrow">↗</div>
+          <div class="wide-accent">
+            FODIO
+          </div>
 
-          </article>
+          <div class="card-arrow">↗</div>
 
-        </div>
+        </article>
 
       </div>
 
     </section>
 
 
-    <!-- =========================
-         APP SHOWCASE
-    ========================== -->
-    <section
-      class="showcase"
-      id="app"
-    >
+    <!-- APP -->
+    <section class="showcase" id="app">
 
-      <div class="container showcase-grid">
+      <div class="showcase-content">
 
-        <div class="showcase-copy">
+        <div class="showcase-text">
 
           <div class="eyebrow light">
             THE FODIO APP
@@ -367,25 +333,25 @@
           <div class="showcase-points">
 
             <div class="showcase-point">
-              <span>01</span>
+              <strong>01</strong>
               <div>
-                <strong>Simple cart</strong>
+                <h3>Simple cart</h3>
                 <p>See exactly what you are ordering.</p>
               </div>
             </div>
 
             <div class="showcase-point">
-              <span>02</span>
+              <strong>02</strong>
               <div>
-                <strong>Clear checkout</strong>
+                <h3>Clear checkout</h3>
                 <p>No unnecessary steps or clutter.</p>
               </div>
             </div>
 
             <div class="showcase-point">
-              <span>03</span>
+              <strong>03</strong>
               <div>
-                <strong>Easy tracking</strong>
+                <h3>Easy tracking</h3>
                 <p>Know what is happening with your order.</p>
               </div>
             </div>
@@ -395,13 +361,14 @@
         </div>
 
 
-        <div class="showcase-visual">
+        <div class="cart-visual">
 
-          <div class="showcase-glow"></div>
+          <div class="cart-glow"></div>
 
           <img
             src="cart_screen.png"
             alt="Fodio cart screen"
+            class="cart-image"
           >
 
         </div>
@@ -411,28 +378,25 @@
     </section>
 
 
-    <!-- =========================
-         ORDER TRACKING
-    ========================== -->
-    <section class="tracking">
+    <!-- TRACKING -->
+    <section class="tracking-section">
 
-      <div class="container tracking-grid">
+      <div class="tracking-container">
 
         <div class="tracking-visual">
 
-          <div class="tracking-frame">
+          <div class="tracking-glow"></div>
 
-            <img
-              src="order_tracking.png"
-              alt="Fodio order tracking"
-            >
-
-          </div>
+          <img
+            src="order_tracking.png"
+            alt="Fodio order tracking"
+            class="tracking-image"
+          >
 
         </div>
 
 
-        <div class="tracking-copy">
+        <div class="tracking-content">
 
           <div class="eyebrow">
             ORDER TRACKING
@@ -451,11 +415,13 @@
 
           <div class="tracking-stat">
 
-            <div class="stat-line"></div>
+            <span>01</span>
 
             <div>
               <strong>LIVE ORDER STATUS</strong>
-              <span>Stay updated from checkout to delivery.</span>
+              <small>
+                Stay updated from checkout to delivery.
+              </small>
             </div>
 
           </div>
@@ -467,14 +433,12 @@
     </section>
 
 
-    <!-- =========================
-         DELIVERY
-    ========================== -->
-    <section class="delivery">
+    <!-- DELIVERY -->
+    <section class="delivery-section">
 
-      <div class="container delivery-grid">
+      <div class="delivery-container">
 
-        <div class="delivery-copy">
+        <div class="delivery-content">
 
           <div class="eyebrow">
             DELIVERY
@@ -490,10 +454,9 @@
             and delivery partners in one simple experience.
           </p>
 
-          <div class="delivery-label">
-            LOCAL FOOD
-            <span>×</span>
-            SIMPLE DELIVERY
+          <div class="delivery-pill">
+            <span></span>
+            LOCAL FOOD × SIMPLE DELIVERY
           </div>
 
         </div>
@@ -506,6 +469,7 @@
           <img
             src="delivery_boy.png"
             alt="Fodio delivery partner"
+            class="delivery-image"
           >
 
         </div>
@@ -515,39 +479,29 @@
     </section>
 
 
-    <!-- =========================
-         ABOUT
-    ========================== -->
-    <section
-      class="about"
-      id="about"
-    >
+    <!-- ABOUT -->
+    <section class="about" id="about">
 
-      <div class="container about-grid">
+      <div class="about-layout">
 
-        <div class="about-heading">
+        <div class="about-label">
+          ABOUT FODIO
+        </div>
 
-          <div class="eyebrow">
-            ABOUT FODIO
-          </div>
+        <div class="about-content">
 
           <h2>
             Food ordering
             <span>should feel simple.</span>
           </h2>
 
-        </div>
-
-
-        <div class="about-copy">
-
-          <p class="about-lead">
+          <p>
             Fodio is being built to make food ordering
             easier in towns and villages.
           </p>
 
           <p>
-            Instead of building for only large cities,
+            Instead of building only for large cities,
             Fodio focuses on connecting local food sellers
             with the people around them.
           </p>
@@ -564,19 +518,14 @@
     </section>
 
 
-    <!-- =========================
-         DOWNLOAD CTA
-    ========================== -->
-    <section
-      class="download"
-      id="download"
-    >
+    <!-- DOWNLOAD -->
+    <section class="download" id="download">
 
-      <div class="container download-inner">
+      <div class="download-card">
 
         <div class="download-content">
 
-          <div class="download-badge">
+          <div class="download-eyebrow">
             COMING SOON
           </div>
 
@@ -590,10 +539,7 @@
             The Google Play link will be added here after release.
           </p>
 
-          <a
-            href="#top"
-            class="download-button"
-          >
+          <a href="#top" class="download-button magnetic">
             Back to top
             <span>↑</span>
           </a>
@@ -618,67 +564,160 @@
   </main>
 
 
-  <!-- =========================
-       FOOTER
-  ========================== -->
-  <footer class="footer">
+  <!-- FOOTER -->
+  <footer>
 
-    <div class="container footer-top">
+    <div class="footer-inner">
 
       <div class="footer-brand">
 
-        <a
-          href="#top"
-          aria-label="Fodio home"
-        >
+        <a href="#top">
           <img
             src="Fodio Official Logo (t).png"
             alt="Fodio"
           >
         </a>
 
-        <p>
-          Making food ordering easier
-          in towns and villages.
-        </p>
+        <div>
+          <span>
+            Making food ordering easier
+            in towns and villages.
+          </span>
+        </div>
 
       </div>
 
 
       <div class="footer-links">
 
-        <div>
-          <span>EXPLORE</span>
-          <a href="#features">Features</a>
-          <a href="#app">App</a>
-          <a href="#about">About</a>
-        </div>
+        <a href="#features">Features</a>
+        <a href="#app">App</a>
+        <a href="#about">About</a>
+        <a href="#download">Get Fodio</a>
+
+      </div>
+
+
+      <div class="footer-bottom">
+
+        <span>
+          © 2026 Fodio. All rights reserved.
+        </span>
 
         <div>
-          <span>FODIO</span>
-          <a href="#download">Get Fodio</a>
-          <a href="#top">Back to top</a>
+          <a href="#top">Back to top ↑</a>
         </div>
 
       </div>
 
     </div>
 
-
-    <div class="container footer-bottom">
-
-      <span>
-        © 2026 Fodio. All rights reserved.
-      </span>
-
-      <span>
-        Built for local food.
-      </span>
-
-    </div>
-
   </footer>
 
+
+  <!-- CURSOR / INTERACTION -->
+  <script>
+    const cursorDot = document.querySelector(".cursor-dot");
+    const cursorRing = document.querySelector(".cursor-ring");
+
+    let mouseX = window.innerWidth / 2;
+    let mouseY = window.innerHeight / 2;
+    let ringX = mouseX;
+    let ringY = mouseY;
+
+    document.addEventListener("mousemove", (event) => {
+      mouseX = event.clientX;
+      mouseY = event.clientY;
+
+      cursorDot.style.left = mouseX + "px";
+      cursorDot.style.top = mouseY + "px";
+    });
+
+    function animateCursor() {
+      ringX += (mouseX - ringX) * 0.14;
+      ringY += (mouseY - ringY) * 0.14;
+
+      cursorRing.style.left = ringX + "px";
+      cursorRing.style.top = ringY + "px";
+
+      requestAnimationFrame(animateCursor);
+    }
+
+    animateCursor();
+
+    document
+      .querySelectorAll("a, button, .feature-card, .food-card-image, .cart-image")
+      .forEach((element) => {
+
+        element.addEventListener("mouseenter", () => {
+          document.body.classList.add("cursor-hover");
+        });
+
+        element.addEventListener("mouseleave", () => {
+          document.body.classList.remove("cursor-hover");
+        });
+
+      });
+
+
+    /* Magnetic buttons */
+    document
+      .querySelectorAll(".magnetic")
+      .forEach((button) => {
+
+        button.addEventListener("mousemove", (event) => {
+
+          const rect = button.getBoundingClientRect();
+
+          const x =
+            event.clientX -
+            rect.left -
+            rect.width / 2;
+
+          const y =
+            event.clientY -
+            rect.top -
+            rect.height / 2;
+
+          button.style.transform =
+            `translate(${x * 0.12}px, ${y * 0.12}px)`;
+        });
+
+        button.addEventListener("mouseleave", () => {
+          button.style.transform = "";
+        });
+
+      });
+
+
+    /* Reveal sections */
+    const observer =
+      new IntersectionObserver(
+        (entries) => {
+
+          entries.forEach((entry) => {
+
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+            }
+
+          });
+
+        },
+        {
+          threshold: 0.12
+        }
+      );
+
+    document
+      .querySelectorAll(
+        ".section-heading, .feature-showcase, .feature-card, .showcase-text, .cart-visual, .tracking-content, .tracking-visual, .delivery-content, .delivery-visual, .about-content, .download-card"
+      )
+      .forEach((element) => {
+        element.classList.add("reveal");
+        observer.observe(element);
+      });
+  </script>
 
 </body>
 </html>
