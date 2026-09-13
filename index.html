@@ -1,17 +1,21 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Fodio — Food, closer to you.</title>
+  <title>Fodio — Food, Made Easier</title>
 
-<meta
-name="description"
-content="Fodio makes food ordering easier in small towns and villages."
+  <meta
+    name="description"
+    content="Fodio makes food ordering easier in towns and villages. Discover local food, order easily, and track your delivery."
+  >
 
->
+  <link
+    rel="icon"
+    type="image/png"
+    href="Fodio Official Logo (t).png"
+  >
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -19,754 +23,662 @@ content="Fodio makes food ordering easier in small towns and villages."
 <body>
 
   <!-- =========================
-       NAVBAR
+       NAVIGATION
   ========================== -->
+  <header class="navbar" id="top">
+    <div class="container nav-inner">
 
-  <header class="navbar">
+      <a
+        href="#top"
+        class="brand"
+        aria-label="Fodio home"
+      >
+        <img
+          src="Fodio Official Logo (t).png"
+          alt="Fodio"
+        >
+      </a>
 
-```
-<div class="container nav-inner">
+      <nav
+        class="nav-links"
+        aria-label="Primary navigation"
+      >
+        <a href="#features">Features</a>
+        <a href="#app">App</a>
+        <a href="#about">About</a>
 
-  <a href="#" class="brand">
-  <img src="Fodio Official Logo (t).png" alt="Fodio">
-</a>
+        <a
+          href="#download"
+          class="nav-button"
+        >
+          Get Fodio
+        </a>
+      </nav>
 
-  <nav class="nav-links">
-
-    <a href="#features">Features</a>
-    <a href="#app">App</a>
-    <a href="#about">About</a>
-
-    <a href="#download" class="nav-button">
-      Get Fodio
-    </a>
-
-  </nav>
-
-</div>
-```
-
+    </div>
   </header>
+
 
   <main>
 
-```
-<!-- =========================
-     HERO
-========================== -->
-
-<section class="hero">
-
-  <div class="hero-glow hero-glow-one"></div>
-  <div class="hero-glow hero-glow-two"></div>
-
-  <div class="container hero-container">
-
-    <div class="hero-content">
-
-      <div class="hero-badge">
-        <span class="badge-dot"></span>
-        Built for local communities
-      </div>
-
-      <img
-        src="Fodio Official Logo (t).png"
-        alt="Fodio"
-        class="hero-logo"
-      >
-
-      <h1>
-        What are you
-        <span class="gradient-text">eating today?</span>
-      </h1>
-
-      <p class="hero-description">
-        Discover local food, order from your favourite shops,
-        and enjoy a simpler way to get food delivered to your door.
-      </p>
-
-      <div class="hero-actions">
-
-        <a href="#download" class="primary-button">
-          Explore Fodio
-          <span>→</span>
-        </a>
-
-        <a href="#app" class="secondary-button">
-          Discover the app
-        </a>
-
-      </div>
-
-      <div class="hero-note">
-        Food ordering made easier in small towns and villages.
-      </div>
-
-    </div>
-
-
-    <!-- REAL HERO APP IMAGE -->
-
-    <div class="hero-visual">
-
-      <div class="hero-image-glow"></div>
-
-      <div class="hero-orbit-ring hero-ring-one"></div>
-      <div class="hero-orbit-ring hero-ring-two"></div>
-
-      <img
-        src="home_screen_image.png"
-        alt="Fodio food ordering app"
-        class="hero-app-image"
-      >
-
-      <div class="hero-floating-card hero-food-card">
-
-        <div class="mini-icon">
-          🍔
-        </div>
-
-        <div>
-          <strong>Local food</strong>
-          <small>Made for your town</small>
-        </div>
-
-      </div>
-
-
-      <div class="hero-floating-card hero-order-card">
-
-        <div class="mini-icon orange">
-          ⚡
-        </div>
-
-        <div>
-          <strong>Simple ordering</strong>
-          <small>Fast & easy</small>
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
-     TRUST STRIP
-========================== -->
-
-<section class="trust-strip">
-
-  <div class="container trust-inner">
-
-    <div>
-      <strong>LOCAL</strong>
-      <span>Food businesses</span>
-    </div>
-
-    <div>
-      <strong>SIMPLE</strong>
-      <span>Ordering experience</span>
-    </div>
-
-    <div>
-      <strong>PERSONAL</strong>
-      <span>Made for your town</span>
-    </div>
-
-    <div>
-      <strong>FODIO</strong>
-      <span>Food, closer to you</span>
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
-     FEATURES
-========================== -->
-
-<section class="features" id="features">
-
-  <div class="container">
-
-    <div class="section-heading">
-
-      <div class="eyebrow">
-        WHY FODIO
-      </div>
-
-      <h2>
-        Built around
-        <span class="gradient-text">
-          your everyday food.
-        </span>
-      </h2>
-
-      <p>
-        A simple, local-first food ordering experience designed
-        for the places where people actually live.
-      </p>
-
-    </div>
-
-
-    <div class="feature-showcase">
-
-      <!-- TEXT -->
-
-      <div class="feature-copy">
-
-        <div class="feature-copy-number">
-          01
-        </div>
-
-        <div class="feature-icon">
-          🍽️
-        </div>
-
-        <h3>
-          Discover local food
-        </h3>
-
-        <p>
-          Explore food from local restaurants, shops and
-          home-based food sellers around you.
-        </p>
-
-        <div class="feature-line"></div>
-
-        <span class="feature-label">
-          LOCAL DISCOVERY
-        </span>
-
-      </div>
-
-
-      <!-- REAL FOOD CARDS -->
-
-      <div class="food-card-visual">
-
-        <div class="food-card-glow"></div>
-
-        <img
-          src="food_card_image.png"
-          alt="Fodio local food cards"
-          class="food-card-image"
-        >
-
-      </div>
-
-    </div>
-
-
-    <!-- SECONDARY FEATURES -->
-
-    <div class="feature-grid">
-
-
-      <article class="feature-card">
-
-        <div class="feature-number">
-          02
-        </div>
-
-        <div class="feature-icon">
-          📍
-        </div>
-
-        <h3>
-          Food around you
-        </h3>
-
-        <p>
-          See food available in your local service area
-          and order with confidence.
-        </p>
-
-        <div class="feature-line"></div>
-
-        <span class="feature-label">
-          LOCAL DELIVERY
-        </span>
-
-      </article>
-
-
-      <article class="feature-card">
-
-        <div class="feature-number">
-          03
-        </div>
-
-        <div class="feature-icon">
-          🛒
-        </div>
-
-        <h3>
-          Easy ordering
-        </h3>
-
-        <p>
-          Choose your food, add it to your cart and place
-          your order without unnecessary steps.
-        </p>
-
-        <div class="feature-line"></div>
-
-        <span class="feature-label">
-          SIMPLE EXPERIENCE
-        </span>
-
-      </article>
-
-
-      <article class="feature-card feature-card-wide">
-
-        <div class="feature-number">
-          04
-        </div>
-
-        <div class="feature-icon">
-          🚴
-        </div>
-
-        <h3>
-          From shop to doorstep
-        </h3>
-
-        <p>
-          Fodio connects customers, local food businesses
-          and delivery partners in one simple ecosystem.
-        </p>
-
-        <div class="feature-line"></div>
-
-        <span class="feature-label">
-          CONNECTED COMMUNITY
-        </span>
-
-      </article>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
-     APP SHOWCASE
-========================== -->
-
-<section class="showcase" id="app">
-
-  <div class="showcase-glow"></div>
-
-  <div class="container">
-
-    <div class="showcase-content">
-
-
-      <div class="showcase-text">
-
-        <div class="eyebrow light">
-          THE FODIO APP
-        </div>
-
-        <h2>
-          Your local food,
-          <span class="gradient-text">
-            all in one place.
-          </span>
-        </h2>
-
-        <p>
-          Browse local food, discover nearby shops,
-          add your favourites to your cart and place
-          your order with ease.
-        </p>
-
-
-        <div class="showcase-points">
-
-          <div class="showcase-point">
-
-            <strong>01</strong>
-
-            <div>
-              <h3>Discover</h3>
-              <p>
-                Find food from local sellers.
-              </p>
-            </div>
+    <!-- =========================
+         HERO
+    ========================== -->
+    <section class="hero">
+
+      <div class="container hero-grid">
+
+        <div class="hero-content">
+
+          <div class="hero-badge">
+            <span></span>
+            Built for local food
+          </div>
+
+          <img
+            class="hero-logo"
+            src="Fodio Official Logo (t).png"
+            alt="Fodio"
+          >
+
+          <h1>
+            What are you
+            <span>eating today?</span>
+          </h1>
+
+          <p>
+            Discover local food, order from nearby shops,
+            and get your meal delivered without the hassle.
+          </p>
+
+          <div class="hero-actions">
+
+            <a
+              href="#features"
+              class="primary-button"
+            >
+              Explore Fodio
+              <span>↗</span>
+            </a>
+
+            <a
+              href="#app"
+              class="secondary-button"
+            >
+              Discover the app
+            </a>
 
           </div>
 
-
-          <div class="showcase-point">
-
-            <strong>02</strong>
-
-            <div>
-              <h3>Order</h3>
-              <p>
-                Choose your food and place your order.
-              </p>
-            </div>
-
+          <div class="hero-note">
+            Food ordering, built for everyday life.
           </div>
 
+        </div>
 
-          <div class="showcase-point">
 
-            <strong>03</strong>
+        <div class="hero-visual">
 
-            <div>
-              <h3>Enjoy</h3>
-              <p>
-                Get your food delivered to your door.
-              </p>
-            </div>
+          <div class="hero-glow"></div>
 
+          <div class="hero-ring hero-ring-one"></div>
+          <div class="hero-ring hero-ring-two"></div>
+
+          <img
+            src="home_screen_image.png"
+            alt="Fodio food ordering app"
+            class="hero-phone"
+          >
+
+          <div class="floating-card floating-card-one">
+            <strong>Local favourites</strong>
+            <span>Near you</span>
+          </div>
+
+          <div class="floating-card floating-card-two">
+            <strong>Order tracking</strong>
+            <span>Live updates</span>
           </div>
 
         </div>
 
       </div>
 
-
-      <!-- REAL CART SCREEN -->
-
-      <div class="cart-visual">
-
-        <div class="cart-glow"></div>
-
-        <img
-          src="cart_screen.png"
-          alt="Fodio cart screen"
-          class="cart-image"
-        >
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
+    </section>
 
 
-<!-- =========================
-     ORDER TRACKING
-========================== -->
+    <!-- =========================
+         TRUST STRIP
+    ========================== -->
+    <section class="trust-strip">
 
-<section class="tracking-section">
+      <div class="container trust-grid">
 
-  <div class="container tracking-container">
+        <div class="trust-item">
+          <span class="trust-number">01</span>
+          <div>
+            <strong>LOCAL FIRST</strong>
+            <span>Built for small towns</span>
+          </div>
+        </div>
 
+        <div class="trust-item">
+          <span class="trust-number">02</span>
+          <div>
+            <strong>EASY ORDERING</strong>
+            <span>Simple by design</span>
+          </div>
+        </div>
 
-    <div class="tracking-visual">
+        <div class="trust-item">
+          <span class="trust-number">03</span>
+          <div>
+            <strong>DELIVERY</strong>
+            <span>From shop to doorstep</span>
+          </div>
+        </div>
 
-      <div class="tracking-glow"></div>
-
-      <img
-        src="order_tracking.png"
-        alt="Fodio order tracking"
-        class="tracking-image"
-      >
-
-    </div>
-
-
-    <div class="tracking-content">
-
-      <div class="eyebrow">
-        STAY IN THE KNOW
-      </div>
-
-      <h2>
-        Know where your
-        <span class="gradient-text">
-          food is.
-        </span>
-      </h2>
-
-      <p>
-        Follow your order as it moves from the local shop
-        towards your doorstep.
-      </p>
-
-
-      <div class="tracking-stat">
-
-        <span>01</span>
-
-        <div>
-          <strong>Order placed</strong>
-          <small>
-            Your order is confirmed.
-          </small>
+        <div class="trust-item">
+          <span class="trust-number">04</span>
+          <div>
+            <strong>PICKUP</strong>
+            <span>Order ahead</span>
+          </div>
         </div>
 
       </div>
 
+    </section>
 
-      <div class="tracking-stat">
 
-        <span>02</span>
+    <!-- =========================
+         FEATURES
+    ========================== -->
+    <section
+      class="features"
+      id="features"
+    >
 
-        <div>
-          <strong>Being prepared</strong>
-          <small>
-            Your food is getting ready.
-          </small>
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div class="eyebrow">
+            WHY FODIO
+          </div>
+
+          <h2>
+            Everything you need to
+            <span>find your next meal.</span>
+          </h2>
+
+          <p>
+            A simpler way to discover food, place orders,
+            and stay connected from checkout to doorstep.
+          </p>
+
+        </div>
+
+
+        <!-- FOOD DISCOVERY -->
+        <div class="feature-showcase">
+
+          <div class="feature-copy">
+
+            <div class="feature-number">
+              01 / FOOD DISCOVERY
+            </div>
+
+            <h3>
+              Discover
+              <span>local food.</span>
+            </h3>
+
+            <p>
+              Explore food from local shops and home-based
+              sellers around you. Find something you love
+              without scrolling through endless options.
+            </p>
+
+            <div class="feature-line"></div>
+
+            <div class="feature-small">
+              Fresh choices. Local sellers. One place.
+            </div>
+
+          </div>
+
+
+          <div class="food-card-visual">
+
+            <div class="visual-glow"></div>
+
+            <img
+              src="food_card_image.png"
+              alt="Fodio food discovery"
+            >
+
+          </div>
+
+        </div>
+
+
+        <!-- FEATURE CARDS -->
+        <div class="feature-cards">
+
+          <article class="feature-card">
+
+            <div class="card-top">
+              <span>02</span>
+              <span>DISCOVER</span>
+            </div>
+
+            <h3>
+              Food
+              <span>around you.</span>
+            </h3>
+
+            <p>
+              Find local dishes and food sellers
+              available in your area.
+            </p>
+
+            <div class="card-arrow">↗</div>
+
+          </article>
+
+
+          <article class="feature-card">
+
+            <div class="card-top">
+              <span>03</span>
+              <span>ORDER</span>
+            </div>
+
+            <h3>
+              Easy
+              <span>ordering.</span>
+            </h3>
+
+            <p>
+              Add your favourites, review your cart,
+              and place your order in a few taps.
+            </p>
+
+            <div class="card-arrow">↗</div>
+
+          </article>
+
+
+          <article class="feature-card">
+
+            <div class="card-top">
+              <span>04</span>
+              <span>DELIVERY</span>
+            </div>
+
+            <h3>
+              From shop
+              <span>to doorstep.</span>
+            </h3>
+
+            <p>
+              Choose delivery or pickup and follow
+              your order every step of the way.
+            </p>
+
+            <div class="card-arrow">↗</div>
+
+          </article>
+
         </div>
 
       </div>
 
+    </section>
 
-      <div class="tracking-stat">
 
-        <span>03</span>
+    <!-- =========================
+         APP SHOWCASE
+    ========================== -->
+    <section
+      class="showcase"
+      id="app"
+    >
 
-        <div>
-          <strong>On the way</strong>
-          <small>
-            Your delivery partner is bringing it to you.
-          </small>
+      <div class="container showcase-grid">
+
+        <div class="showcase-copy">
+
+          <div class="eyebrow light">
+            THE FODIO APP
+          </div>
+
+          <h2>
+            Your order.
+            <span>Your way.</span>
+          </h2>
+
+          <p>
+            Designed to keep food ordering simple,
+            fast, and easy to understand.
+          </p>
+
+          <div class="showcase-points">
+
+            <div class="showcase-point">
+              <span>01</span>
+              <div>
+                <strong>Simple cart</strong>
+                <p>See exactly what you are ordering.</p>
+              </div>
+            </div>
+
+            <div class="showcase-point">
+              <span>02</span>
+              <div>
+                <strong>Clear checkout</strong>
+                <p>No unnecessary steps or clutter.</p>
+              </div>
+            </div>
+
+            <div class="showcase-point">
+              <span>03</span>
+              <div>
+                <strong>Easy tracking</strong>
+                <p>Know what is happening with your order.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="showcase-visual">
+
+          <div class="showcase-glow"></div>
+
+          <img
+            src="cart_screen.png"
+            alt="Fodio cart screen"
+          >
+
         </div>
 
       </div>
 
-    </div>
-
-  </div>
-
-</section>
+    </section>
 
 
-<!-- =========================
-     DELIVERY
-========================== -->
+    <!-- =========================
+         ORDER TRACKING
+    ========================== -->
+    <section class="tracking">
 
-<section class="delivery-section">
+      <div class="container tracking-grid">
 
-  <div class="delivery-glow"></div>
+        <div class="tracking-visual">
 
-  <div class="container delivery-container">
+          <div class="tracking-frame">
 
+            <img
+              src="order_tracking.png"
+              alt="Fodio order tracking"
+            >
 
-    <div class="delivery-content">
+          </div>
 
-      <div class="eyebrow">
-        LOCAL DELIVERY
-      </div>
-
-      <h2>
-        From local shops
-        <span class="gradient-text">
-          to your doorstep.
-        </span>
-      </h2>
-
-      <p>
-        Fodio brings customers, food businesses and delivery
-        partners together to make local food ordering easier.
-      </p>
-
-      <div class="delivery-pill">
-        <span></span>
-        Built for local communities
-      </div>
-
-    </div>
-
-
-    <div class="delivery-visual">
-
-      <div class="delivery-circle"></div>
-
-      <img
-        src="delivery_boy.png"
-        alt="Fodio delivery partner"
-        class="delivery-image"
-      >
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
-     ABOUT
-========================== -->
-
-<section class="about" id="about">
-
-  <div class="container">
-
-    <div class="about-layout">
-
-      <div class="about-label">
-        ABOUT FODIO
-      </div>
-
-
-      <div class="about-content">
-
-        <h2>
-          Making food ordering
-          <span class="gradient-text">
-            closer to home.
-          </span>
-        </h2>
-
-        <p>
-          Fodio is built with a simple idea:
-          food ordering should work for everyone,
-          including the small towns and villages
-          that are often overlooked.
-        </p>
-
-        <p>
-          We connect customers with local food businesses
-          and delivery partners, creating a simpler way
-          for communities to discover and order food.
-        </p>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
-     DOWNLOAD
-========================== -->
-
-<section class="download" id="download">
-
-  <div class="container">
-
-    <div class="download-card">
-
-
-      <div class="download-content">
-
-        <div class="eyebrow">
-          COMING SOON
         </div>
 
-        <h2>
-          Fodio is coming
-          <span>
-            to your town.
-          </span>
-        </h2>
 
-        <p>
-          The Fodio app will soon be available
-          on Google Play.
-        </p>
+        <div class="tracking-copy">
 
-        <a
-          href="#"
-          class="primary-button download-button"
-        >
-          Get Fodio
-          <span>→</span>
-        </a>
+          <div class="eyebrow">
+            ORDER TRACKING
+          </div>
 
-        <small>
-          Google Play link will be added after launch.
-        </small>
+          <h2>
+            Know where
+            <span>your food is.</span>
+          </h2>
 
-      </div>
+          <p>
+            From the moment your order is accepted
+            to the moment it reaches you, Fodio keeps
+            the journey clear.
+          </p>
 
+          <div class="tracking-stat">
 
-      <div class="download-character">
+            <div class="stat-line"></div>
 
-        <img
-          src="delivery_boy.png"
-          alt=""
-        >
+            <div>
+              <strong>LIVE ORDER STATUS</strong>
+              <span>Stay updated from checkout to delivery.</span>
+            </div>
+
+          </div>
+
+        </div>
 
       </div>
 
-    </div>
+    </section>
 
-  </div>
 
-</section>
-```
+    <!-- =========================
+         DELIVERY
+    ========================== -->
+    <section class="delivery">
+
+      <div class="container delivery-grid">
+
+        <div class="delivery-copy">
+
+          <div class="eyebrow">
+            DELIVERY
+          </div>
+
+          <h2>
+            From local shops
+            <span>to your doorstep.</span>
+          </h2>
+
+          <p>
+            Fodio connects customers, local food sellers,
+            and delivery partners in one simple experience.
+          </p>
+
+          <div class="delivery-label">
+            LOCAL FOOD
+            <span>×</span>
+            SIMPLE DELIVERY
+          </div>
+
+        </div>
+
+
+        <div class="delivery-visual">
+
+          <div class="delivery-circle"></div>
+
+          <img
+            src="delivery_boy.png"
+            alt="Fodio delivery partner"
+          >
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         ABOUT
+    ========================== -->
+    <section
+      class="about"
+      id="about"
+    >
+
+      <div class="container about-grid">
+
+        <div class="about-heading">
+
+          <div class="eyebrow">
+            ABOUT FODIO
+          </div>
+
+          <h2>
+            Food ordering
+            <span>should feel simple.</span>
+          </h2>
+
+        </div>
+
+
+        <div class="about-copy">
+
+          <p class="about-lead">
+            Fodio is being built to make food ordering
+            easier in towns and villages.
+          </p>
+
+          <p>
+            Instead of building for only large cities,
+            Fodio focuses on connecting local food sellers
+            with the people around them.
+          </p>
+
+          <p>
+            Discover something nearby, order it easily,
+            and get it delivered or pick it up yourself.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         DOWNLOAD CTA
+    ========================== -->
+    <section
+      class="download"
+      id="download"
+    >
+
+      <div class="container download-inner">
+
+        <div class="download-content">
+
+          <div class="download-badge">
+            COMING SOON
+          </div>
+
+          <h2>
+            Your next meal
+            <span>is closer than you think.</span>
+          </h2>
+
+          <p>
+            Fodio is preparing to launch.
+            The Google Play link will be added here after release.
+          </p>
+
+          <a
+            href="#top"
+            class="download-button"
+          >
+            Back to top
+            <span>↑</span>
+          </a>
+
+        </div>
+
+
+        <div class="download-character">
+
+          <img
+            src="delivery_boy.png"
+            alt=""
+            aria-hidden="true"
+          >
+
+        </div>
+
+      </div>
+
+    </section>
 
   </main>
+
 
   <!-- =========================
        FOOTER
   ========================== -->
+  <footer class="footer">
 
-  <footer>
+    <div class="container footer-top">
 
-```
-<div class="container footer-inner">
+      <div class="footer-brand">
+
+        <a
+          href="#top"
+          aria-label="Fodio home"
+        >
+          <img
+            src="Fodio Official Logo (t).png"
+            alt="Fodio"
+          >
+        </a>
+
+        <p>
+          Making food ordering easier
+          in towns and villages.
+        </p>
+
+      </div>
 
 
-  <div class="footer-brand">
+      <div class="footer-links">
 
-    <img
-      src="Fodio Official Logo (t).png"
-      alt="Fodio"
-    >
+        <div>
+          <span>EXPLORE</span>
+          <a href="#features">Features</a>
+          <a href="#app">App</a>
+          <a href="#about">About</a>
+        </div>
 
-    <div>
-      <strong>Fodio</strong>
+        <div>
+          <span>FODIO</span>
+          <a href="#download">Get Fodio</a>
+          <a href="#top">Back to top</a>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="container footer-bottom">
+
       <span>
-        Food, closer to you.
+        © 2026 Fodio. All rights reserved.
       </span>
+
+      <span>
+        Built for local food.
+      </span>
+
     </div>
-
-  </div>
-
-
-  <div class="footer-links">
-
-    <a href="#features">Features</a>
-    <a href="#app">App</a>
-    <a href="#about">About</a>
-    <a href="#download">Download</a>
-
-  </div>
-
-
-  <div class="footer-bottom">
-
-    <span>
-      © 2026 Fodio. All rights reserved.
-    </span>
-
-    <div>
-      <a href="#">Privacy Policy</a>
-      <a href="#">Terms</a>
-    </div>
-
-  </div>
-
-</div>
-```
 
   </footer>
+
 
 </body>
 </html>
