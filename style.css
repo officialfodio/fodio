@@ -1,2421 +1,724 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap');
-
-/* =========================================================
-   FODIO — PREMIUM LANDING PAGE
-========================================================= */
-
-@font-face {
-  font-family: "Agrandir";
-  src: url("Agrandir-Regular.otf") format("opentype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Agrandir";
-  src: url("Agrandir-TextBold.otf") format("opentype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-
-/* =========================================================
-   VARIABLES
-========================================================= */
-
-:root {
-  --red: #ff1616;
-  --orange: #ff7300;
-
-  --gradient: linear-gradient(
-    135deg,
-    #ff1616 0%,
-    #ff7300 100%
-  );
-
-  --dark: #080808;
-  --dark-soft: #111111;
-
-  --white: #ffffff;
-  --cream: #fffaf7;
-
-  --text: #111111;
-  --muted: #737373;
-
-  --border: rgba(0, 0, 0, 0.08);
-}
-
-
-/* =========================================================
-   RESET
-========================================================= */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: "DM Sans", sans-serif;
-  background: #fffaf7;
-  color: #111111;
-  overflow-x: hidden;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-img {
-  max-width: 100%;
-  display: block;
-}
-
-
-/* =========================================================
-   TYPOGRAPHY
-========================================================= */
-
-h1,
-h2,
-h3,
-.brand {
-  font-family: "Agrandir", sans-serif;
-}
-
-h1,
-h2,
-h3 {
-  font-weight: 700;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-p,
-span,
-small,
-a,
-button {
-  font-family: "DM Sans", sans-serif;
-}
+  <title>Fodio — Food, Made Easier</title>
 
+  <meta
+    name="description"
+    content="Fodio makes food ordering easier in towns and villages."
+  >
 
-/* =========================================================
-   GRADIENT TEXT
-========================================================= */
+  <link
+    rel="icon"
+    type="image/png"
+    href="Fodio Official Logo (t).png"
+  >
 
-.gradient-text {
-  background: var(--gradient);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+  <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
 
-/* =========================================================
-   EYEBROW
-========================================================= */
+  <!-- CURSOR -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
 
-.eyebrow {
-  display: inline-block;
-  color: var(--red);
-  font-family: "DM Sans", sans-serif;
-  font-size: 11px;
-  font-weight: 800;
-  letter-spacing: 2px;
-}
+  <!-- HEADER -->
+  <header class="navbar" id="top">
+    <div class="nav-inner">
 
-.eyebrow.light {
-  color: #ff7b45;
-}
+      <a href="#top" class="brand">
+        <img src="Fodio Official Logo (t).png" alt="Fodio">
+      </a>
 
+      <nav class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#app">App</a>
+        <a href="#about">About</a>
+        <a href="#download" class="nav-button">
+          Get Fodio <span>↗</span>
+        </a>
+      </nav>
 
-/* =========================================================
-   HEADER / NAVBAR
-   FODIO GRADIENT
-========================================================= */
+    </div>
+  </header>
 
-.navbar {
-  position: fixed !important;
 
-  top: 0 !important;
-  left: 0 !important;
+  <main>
 
-  width: 100% !important;
+    <!-- HERO -->
+    <section class="hero">
 
-  z-index: 1000 !important;
+      <div class="hero-glow glow-a"></div>
+      <div class="hero-glow glow-b"></div>
 
-  background: linear-gradient(
-    135deg,
-    #ff1616 0%,
-    #ff7300 100%
-  ) !important;
+      <div class="hero-grid">
 
-  border-bottom: 1px solid rgba(255, 255, 255, 0.20);
+        <div class="hero-content">
 
-  box-shadow:
-    0 8px 30px rgba(255, 60, 15, 0.18);
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            Built for local food
+          </div>
 
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
-}
+          <h1>
+            What are you
+            <span>eating today?</span>
+          </h1>
 
-.nav-inner {
-  height: 78px;
+          <p class="hero-description">
+            Discover local food, order from nearby shops,
+            and get your meal delivered without the hassle.
+          </p>
 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+          <div class="hero-actions">
 
-.brand {
-  display: flex;
-  align-items: center;
+            <a href="#features" class="primary-button magnetic">
+              Explore Fodio
+              <span>↗</span>
+            </a>
 
-  gap: 11px;
+            <a href="#app" class="secondary-button magnetic">
+              Discover the app
+            </a>
 
-  font-size: 22px;
-  font-weight: 700;
+          </div>
 
-  letter-spacing: -0.7px;
+          <div class="hero-note">
+            FOOD ORDERING · LOCAL SHOPS · EASY DELIVERY
+          </div>
 
-  color: #ffffff !important;
-}
+        </div>
 
-.brand img {
-  width: 42px;
-  height: 42px;
 
-  object-fit: contain;
-}
+        <div class="hero-visual">
 
-.nav-links {
-  display: flex;
-  align-items: center;
+          <div class="hero-orbit orbit-one"></div>
+          <div class="hero-orbit orbit-two"></div>
 
-  gap: 31px;
+          <div class="hero-image-glow"></div>
 
-  font-family: "DM Sans", sans-serif;
+          <img
+            src="home_screen_image.png"
+            alt="Fodio food ordering app"
+            class="hero-app-image"
+          >
 
-  font-size: 13px;
-  font-weight: 700;
-}
+          <div class="hero-floating-card hero-food-card">
+            <div class="mini-icon">⌁</div>
+            <div>
+              <strong>Local favourites</strong>
+              <small>Near you</small>
+            </div>
+          </div>
 
-.nav-links > a:not(.nav-button) {
-  color: rgba(255, 255, 255, 0.92) !important;
+          <div class="hero-floating-card hero-order-card">
+            <div class="mini-icon orange">✓</div>
+            <div>
+              <strong>Order tracking</strong>
+              <small>Live updates</small>
+            </div>
+          </div>
 
-  transition:
-    color 0.25s ease,
-    transform 0.25s ease;
-}
+        </div>
 
-.nav-links > a:not(.nav-button):hover {
-  color: #ffffff !important;
+      </div>
 
-  transform: translateY(-1px);
-}
+    </section>
 
-.nav-button {
-  padding: 11px 19px;
 
-  border-radius: 13px;
+    <!-- TRUST -->
+    <section class="trust-strip">
 
-  color: #ff1616 !important;
+      <div class="trust-inner">
 
-  background: #ffffff !important;
+        <div>
+          <strong>LOCAL FIRST</strong>
+          <span>Built for small towns</span>
+        </div>
 
-  box-shadow:
-    0 8px 22px rgba(0, 0, 0, 0.14);
+        <div>
+          <strong>EASY ORDERING</strong>
+          <span>Simple by design</span>
+        </div>
 
-  transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease;
-}
+        <div>
+          <strong>DELIVERY</strong>
+          <span>From shop to doorstep</span>
+        </div>
 
-.nav-button:hover {
-  transform: translateY(-2px);
+        <div>
+          <strong>PICKUP</strong>
+          <span>Order ahead</span>
+        </div>
 
-  box-shadow:
-    0 12px 28px rgba(0, 0, 0, 0.20);
-}
+      </div>
 
+    </section>
 
-/* =========================================================
-   HERO
-========================================================= */
 
-.hero {
-  min-height: 100vh;
+    <!-- FEATURES -->
+    <section class="features" id="features">
 
-  padding-top: 78px;
+      <div class="section-heading">
 
-  position: relative;
+        <div class="eyebrow">
+          WHY FODIO
+        </div>
 
-  overflow: hidden;
+        <h2>
+          Everything you need to
+          <span>find your next meal.</span>
+        </h2>
 
-  background:
-    radial-gradient(
-      circle at 78% 20%,
-      rgba(255, 115, 0, 0.14),
-      transparent 28%
-    ),
-    radial-gradient(
-      circle at 15% 75%,
-      rgba(255, 22, 22, 0.07),
-      transparent 25%
-    ),
-    var(--cream);
-}
+        <p>
+          A simpler way to discover food, place orders,
+          and stay connected from checkout to doorstep.
+        </p>
 
-.hero-container {
-  min-height: calc(100vh - 78px);
+      </div>
 
-  display: grid;
 
-  grid-template-columns: 0.95fr 1.05fr;
+      <!-- DISCOVERY -->
+      <div class="feature-showcase">
 
-  align-items: center;
+        <div class="feature-copy">
 
-  gap: 30px;
+          <div class="feature-copy-number">
+            01
+          </div>
 
-  position: relative;
-}
+          <div class="feature-number-label">
+            FOOD DISCOVERY
+          </div>
 
-.hero-content {
-  position: relative;
+          <h3>
+            Discover
+            <span>local food.</span>
+          </h3>
 
-  z-index: 10;
+          <p>
+            Explore food from local shops and home-based
+            sellers around you. Find something you love
+            without scrolling through endless options.
+          </p>
 
-  padding: 50px 0;
-}
+          <div class="feature-line"></div>
 
-.hero-badge {
-  display: inline-flex;
+          <div class="feature-label">
+            FRESH CHOICES · LOCAL SELLERS · ONE PLACE
+          </div>
 
-  align-items: center;
+        </div>
 
-  gap: 9px;
 
-  padding: 9px 14px;
+        <div class="food-card-visual">
 
-  margin-bottom: 27px;
+          <div class="food-card-glow"></div>
 
-  border-radius: 100px;
+          <img
+            src="food_card_image.png"
+            alt="Fodio food discovery"
+            class="food-card-image"
+          >
 
-  background: rgba(255, 255, 255, 0.72);
+        </div>
 
-  border: 1px solid rgba(0, 0, 0, 0.07);
+      </div>
 
-  color: #666;
 
-  font-size: 12px;
-  font-weight: 700;
+      <!-- FEATURE CARDS -->
+      <div class="feature-grid">
 
-  box-shadow:
-    0 8px 30px rgba(0, 0, 0, 0.04);
-}
+        <article class="feature-card">
 
-.badge-dot {
-  width: 7px;
-  height: 7px;
+          <div class="card-top">
+            <span>02</span>
+            <span>DISCOVER</span>
+          </div>
 
-  flex-shrink: 0;
+          <h3>
+            Food
+            <span>around you.</span>
+          </h3>
 
-  border-radius: 50%;
+          <p>
+            Find local dishes and food sellers
+            available in your area.
+          </p>
 
-  background: var(--red);
+          <div class="card-arrow">↗</div>
 
-  box-shadow:
-    0 0 0 5px rgba(255, 22, 22, 0.09),
-    0 0 14px rgba(255, 22, 22, 0.45);
-}
+        </article>
 
-.hero-logo {
-  width: 72px;
-  height: 72px;
 
-  object-fit: contain;
+        <article class="feature-card">
 
-  margin-bottom: 24px;
-}
+          <div class="card-top">
+            <span>03</span>
+            <span>ORDER</span>
+          </div>
 
-.hero h1 {
-  max-width: 650px;
+          <h3>
+            Easy
+            <span>ordering.</span>
+          </h3>
 
-  font-size: clamp(52px, 6vw, 82px);
+          <p>
+            Add your favourites, review your cart,
+            and place your order in a few taps.
+          </p>
 
-  line-height: 0.97;
+          <div class="card-arrow">↗</div>
 
-  letter-spacing: -4px;
+        </article>
 
-  margin-bottom: 28px;
-}
 
-.hero-description {
-  max-width: 570px;
+        <article class="feature-card feature-card-wide">
 
-  color: #686868;
+          <div class="card-top">
+            <span>04</span>
+            <span>DELIVERY</span>
+          </div>
 
-  font-size: 17px;
+          <div>
+            <h3>
+              From shop
+              <span>to doorstep.</span>
+            </h3>
 
-  line-height: 1.7;
+            <p>
+              Choose delivery or pickup and follow
+              your order every step of the way.
+            </p>
+          </div>
 
-  margin-bottom: 32px;
-}
+          <div class="wide-accent">
+            FODIO
+          </div>
 
-.hero-actions {
-  display: flex;
+          <div class="card-arrow">↗</div>
 
-  align-items: center;
+        </article>
 
-  gap: 13px;
+      </div>
 
-  margin-bottom: 22px;
-}
+    </section>
 
-.primary-button,
-.secondary-button {
-  display: inline-flex;
 
-  align-items: center;
-  justify-content: center;
+    <!-- APP -->
+    <section class="showcase" id="app">
 
-  min-height: 52px;
+      <div class="showcase-content">
 
-  padding: 0 22px;
+        <div class="showcase-text">
 
-  border-radius: 15px;
+          <div class="eyebrow light">
+            THE FODIO APP
+          </div>
 
-  font-size: 13px;
-  font-weight: 800;
+          <h2>
+            Your order.
+            <span>Your way.</span>
+          </h2>
 
-  transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease;
-}
+          <p>
+            Designed to keep food ordering simple,
+            fast, and easy to understand.
+          </p>
 
-.primary-button {
-  gap: 15px;
+          <div class="showcase-points">
 
-  color: white;
+            <div class="showcase-point">
+              <strong>01</strong>
+              <div>
+                <h3>Simple cart</h3>
+                <p>See exactly what you are ordering.</p>
+              </div>
+            </div>
 
-  background: var(--gradient);
+            <div class="showcase-point">
+              <strong>02</strong>
+              <div>
+                <h3>Clear checkout</h3>
+                <p>No unnecessary steps or clutter.</p>
+              </div>
+            </div>
 
-  box-shadow:
-    0 15px 35px rgba(255, 66, 15, 0.22);
-}
+            <div class="showcase-point">
+              <strong>03</strong>
+              <div>
+                <h3>Easy tracking</h3>
+                <p>Know what is happening with your order.</p>
+              </div>
+            </div>
 
-.primary-button span {
-  font-size: 19px;
-}
+          </div>
 
-.primary-button:hover {
-  transform: translateY(-3px);
+        </div>
 
-  box-shadow:
-    0 20px 45px rgba(255, 66, 15, 0.30);
-}
 
-.secondary-button {
-  color: #222;
+        <div class="cart-visual">
 
-  background: rgba(255, 255, 255, 0.65);
+          <div class="cart-glow"></div>
 
-  border: 1px solid rgba(0, 0, 0, 0.08);
-}
+          <img
+            src="cart_screen.png"
+            alt="Fodio cart screen"
+            class="cart-image"
+          >
 
-.secondary-button:hover {
-  transform: translateY(-3px);
+        </div>
 
-  background: white;
-}
+      </div>
 
-.hero-note {
-  color: #999;
+    </section>
 
-  font-size: 11px;
-}
 
+    <!-- TRACKING -->
+    <section class="tracking-section">
 
-/* =========================================================
-   HERO VISUAL
-========================================================= */
+      <div class="tracking-container">
 
-.hero-visual {
-  min-height: 700px;
+        <div class="tracking-visual">
 
-  position: relative;
+          <div class="tracking-glow"></div>
 
-  display: flex;
+          <img
+            src="order_tracking.png"
+            alt="Fodio order tracking"
+            class="tracking-image"
+          >
 
-  align-items: center;
-  justify-content: center;
-}
+        </div>
 
-.hero-image-glow {
-  position: absolute;
 
-  width: 390px;
-  height: 390px;
+        <div class="tracking-content">
 
-  border-radius: 50%;
+          <div class="eyebrow">
+            ORDER TRACKING
+          </div>
 
-  background:
-    radial-gradient(
-      circle,
-      rgba(255, 82, 25, 0.22),
-      rgba(255, 115, 0, 0.06),
-      transparent 70%
-    );
+          <h2>
+            Know where
+            <span>your food is.</span>
+          </h2>
 
-  filter: blur(18px);
-}
+          <p>
+            From the moment your order is accepted
+            to the moment it reaches you, Fodio keeps
+            the journey clear.
+          </p>
 
-.hero-app-image {
-  width: min(430px, 92%);
+          <div class="tracking-stat">
 
-  height: auto;
+            <span>01</span>
 
-  position: relative;
+            <div>
+              <strong>LIVE ORDER STATUS</strong>
+              <small>
+                Stay updated from checkout to delivery.
+              </small>
+            </div>
 
-  z-index: 5;
+          </div>
 
-  object-fit: contain;
+        </div>
 
-  filter:
-    drop-shadow(
-      0 35px 50px rgba(0, 0, 0, 0.18)
-    )
-    drop-shadow(
-      0 10px 30px rgba(255, 80, 20, 0.13)
-    );
+      </div>
 
-  animation:
-    heroFloat 6s ease-in-out infinite;
-}
+    </section>
 
-.hero-orbit-ring {
-  position: absolute;
 
-  border-radius: 50%;
+    <!-- DELIVERY -->
+    <section class="delivery-section">
 
-  border: 1px solid rgba(255, 80, 30, 0.12);
+      <div class="delivery-container">
 
-  pointer-events: none;
-}
+        <div class="delivery-content">
 
-.hero-ring-one {
-  width: 560px;
-  height: 560px;
-}
+          <div class="eyebrow">
+            DELIVERY
+          </div>
 
-.hero-ring-two {
-  width: 440px;
-  height: 440px;
+          <h2>
+            From local shops
+            <span>to your doorstep.</span>
+          </h2>
 
-  border-style: dashed;
+          <p>
+            Fodio connects customers, local food sellers,
+            and delivery partners in one simple experience.
+          </p>
 
-  animation:
-    spin 30s linear infinite;
-}
+          <div class="delivery-pill">
+            <span></span>
+            LOCAL FOOD × SIMPLE DELIVERY
+          </div>
 
-.hero-floating-card {
-  position: absolute;
+        </div>
 
-  z-index: 8;
 
-  display: flex;
+        <div class="delivery-visual">
 
-  align-items: center;
+          <div class="delivery-circle"></div>
 
-  gap: 11px;
+          <img
+            src="delivery_boy.png"
+            alt="Fodio delivery partner"
+            class="delivery-image"
+          >
 
-  padding: 12px 15px;
+        </div>
 
-  border-radius: 16px;
+      </div>
 
-  background: rgba(255, 255, 255, 0.82);
+    </section>
 
-  backdrop-filter: blur(18px);
 
-  border: 1px solid rgba(255, 255, 255, 0.9);
+    <!-- ABOUT -->
+    <section class="about" id="about">
 
-  box-shadow:
-    0 20px 45px rgba(0, 0, 0, 0.09);
-}
+      <div class="about-layout">
 
-.hero-floating-card strong {
-  display: block;
+        <div class="about-label">
+          ABOUT FODIO
+        </div>
 
-  font-size: 12px;
-  font-weight: 800;
-}
+        <div class="about-content">
 
-.hero-floating-card small {
-  display: block;
+          <h2>
+            Food ordering
+            <span>should feel simple.</span>
+          </h2>
 
-  margin-top: 3px;
+          <p>
+            Fodio is being built to make food ordering
+            easier in towns and villages.
+          </p>
 
-  color: #999;
+          <p>
+            Instead of building only for large cities,
+            Fodio focuses on connecting local food sellers
+            with the people around them.
+          </p>
 
-  font-size: 10px;
-}
+          <p>
+            Discover something nearby, order it easily,
+            and get it delivered or pick it up yourself.
+          </p>
 
-.mini-icon {
-  width: 35px;
-  height: 35px;
+        </div>
 
-  display: flex;
+      </div>
 
-  align-items: center;
-  justify-content: center;
+    </section>
 
-  border-radius: 11px;
 
-  background: #fff1e9;
+    <!-- DOWNLOAD -->
+    <section class="download" id="download">
 
-  font-size: 17px;
-}
+      <div class="download-card">
 
-.mini-icon.orange {
-  background: #fff3e9;
-}
+        <div class="download-content">
 
-.hero-food-card {
-  top: 130px;
-  left: 0;
+          <div class="download-eyebrow">
+            COMING SOON
+          </div>
 
-  animation:
-    floatCard 4.5s ease-in-out infinite;
-}
+          <h2>
+            Your next meal
+            <span>is closer than you think.</span>
+          </h2>
 
-.hero-order-card {
-  right: 0;
-  bottom: 135px;
+          <p>
+            Fodio is preparing to launch.
+            The Google Play link will be added here after release.
+          </p>
 
-  animation:
-    floatCard 4.5s ease-in-out infinite 1.5s;
-}
+          <a href="#top" class="download-button magnetic">
+            Back to top
+            <span>↑</span>
+          </a>
 
+        </div>
 
-/* =========================================================
-   HERO GLOWS
-========================================================= */
 
-.hero-glow-one,
-.hero-glow-two {
-  position: absolute;
+        <div class="download-character">
 
-  border-radius: 50%;
+          <img
+            src="delivery_boy.png"
+            alt=""
+            aria-hidden="true"
+          >
 
-  filter: blur(90px);
+        </div>
 
-  pointer-events: none;
-}
+      </div>
 
-.hero-glow-one {
-  width: 320px;
-  height: 320px;
+    </section>
 
-  left: -170px;
-  top: 12%;
+  </main>
 
-  background: rgba(255, 22, 22, 0.08);
-}
 
-.hero-glow-two {
-  width: 360px;
-  height: 360px;
+  <!-- FOOTER -->
+  <footer>
 
-  right: -170px;
-  bottom: 0;
+    <div class="footer-inner">
 
-  background: rgba(255, 115, 0, 0.09);
-}
+      <div class="footer-brand">
 
+        <a href="#top">
+          <img
+            src="Fodio Official Logo (t).png"
+            alt="Fodio"
+          >
+        </a>
 
-/* =========================================================
-   TRUST STRIP
-========================================================= */
+        <div>
+          <span>
+            Making food ordering easier
+            in towns and villages.
+          </span>
+        </div>
 
-.trust-strip {
-  background: #111111;
+      </div>
 
-  color: white;
 
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
+      <div class="footer-links">
 
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-}
+        <a href="#features">Features</a>
+        <a href="#app">App</a>
+        <a href="#about">About</a>
+        <a href="#download">Get Fodio</a>
 
-.trust-inner {
-  min-height: 100px;
+      </div>
 
-  display: grid;
 
-  grid-template-columns: repeat(4, 1fr);
+      <div class="footer-bottom">
 
-  align-items: center;
-}
+        <span>
+          © 2026 Fodio. All rights reserved.
+        </span>
 
-.trust-inner > div {
-  padding: 0 25px;
+        <div>
+          <a href="#top">Back to top ↑</a>
+        </div>
 
-  border-right:
-    1px solid rgba(255, 255, 255, 0.08);
-}
+      </div>
 
-.trust-inner > div:first-child {
-  padding-left: 0;
-}
+    </div>
 
-.trust-inner > div:last-child {
-  border-right: none;
-}
+  </footer>
 
-.trust-inner strong {
-  display: block;
 
-  margin-bottom: 7px;
+  <!-- CURSOR / INTERACTION -->
+  <script>
+    const cursorDot = document.querySelector(".cursor-dot");
+    const cursorRing = document.querySelector(".cursor-ring");
 
-  font-size: 11px;
-  font-weight: 800;
+    let mouseX = window.innerWidth / 2;
+    let mouseY = window.innerHeight / 2;
+    let ringX = mouseX;
+    let ringY = mouseY;
 
-  letter-spacing: 1.5px;
+    document.addEventListener("mousemove", (event) => {
+      mouseX = event.clientX;
+      mouseY = event.clientY;
 
-  background: var(--gradient);
+      cursorDot.style.left = mouseX + "px";
+      cursorDot.style.top = mouseY + "px";
+    });
 
-  -webkit-background-clip: text;
-  background-clip: text;
+    function animateCursor() {
+      ringX += (mouseX - ringX) * 0.14;
+      ringY += (mouseY - ringY) * 0.14;
 
-  -webkit-text-fill-color: transparent;
-}
+      cursorRing.style.left = ringX + "px";
+      cursorRing.style.top = ringY + "px";
 
-.trust-inner span {
-  color: #777;
+      requestAnimationFrame(animateCursor);
+    }
 
-  font-size: 11px;
-}
+    animateCursor();
 
+    document
+      .querySelectorAll("a, button, .feature-card, .food-card-image, .cart-image")
+      .forEach((element) => {
 
-/* =========================================================
-   FEATURES
-========================================================= */
+        element.addEventListener("mouseenter", () => {
+          document.body.classList.add("cursor-hover");
+        });
 
-.features {
-  padding: 135px 0;
+        element.addEventListener("mouseleave", () => {
+          document.body.classList.remove("cursor-hover");
+        });
 
-  background: #ffffff;
-}
+      });
 
-.section-heading {
-  max-width: 720px;
 
-  margin-bottom: 70px;
-}
+    /* Magnetic buttons */
+    document
+      .querySelectorAll(".magnetic")
+      .forEach((button) => {
 
-.section-heading h2 {
-  font-size: clamp(42px, 5vw, 64px);
+        button.addEventListener("mousemove", (event) => {
 
-  line-height: 1;
+          const rect = button.getBoundingClientRect();
 
-  letter-spacing: -3px;
+          const x =
+            event.clientX -
+            rect.left -
+            rect.width / 2;
 
-  margin: 14px 0 20px;
-}
+          const y =
+            event.clientY -
+            rect.top -
+            rect.height / 2;
 
-.section-heading p {
-  max-width: 620px;
+          button.style.transform =
+            `translate(${x * 0.12}px, ${y * 0.12}px)`;
+        });
 
-  color: #777;
+        button.addEventListener("mouseleave", () => {
+          button.style.transform = "";
+        });
 
-  font-size: 16px;
+      });
 
-  line-height: 1.7;
-}
 
+    /* Reveal sections */
+    const observer =
+      new IntersectionObserver(
+        (entries) => {
 
-/* =========================================================
-   FEATURE SHOWCASE
-========================================================= */
+          entries.forEach((entry) => {
 
-.feature-showcase {
-  min-height: 500px;
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+            }
 
-  display: grid;
+          });
 
-  grid-template-columns: 0.8fr 1.2fr;
+        },
+        {
+          threshold: 0.12
+        }
+      );
 
-  align-items: center;
+    document
+      .querySelectorAll(
+        ".section-heading, .feature-showcase, .feature-card, .showcase-text, .cart-visual, .tracking-content, .tracking-visual, .delivery-content, .delivery-visual, .about-content, .download-card"
+      )
+      .forEach((element) => {
+        element.classList.add("reveal");
+        observer.observe(element);
+      });
+  </script>
 
-  gap: 50px;
+</body>
+</html>
 
-  margin-bottom: 80px;
-
-  position: relative;
-
-  overflow: hidden;
-
-  border-radius: 30px;
-
-  background:
-    radial-gradient(
-      circle at 90% 50%,
-      rgba(255, 115, 0, 0.13),
-      transparent 42%
-    ),
-    #fffaf7;
-
-  border: 1px solid #f0ebe7;
-}
-
-.feature-copy {
-  position: relative;
-
-  z-index: 4;
-
-  padding: 55px;
-}
-
-.feature-copy-number {
-  position: absolute;
-
-  top: 35px;
-  right: 40px;
-
-  color: #ddd;
-
-  font-size: 12px;
-  font-weight: 800;
-}
-
-.feature-copy .feature-icon {
-  margin-bottom: 35px;
-}
-
-.feature-copy h3 {
-  font-size: 34px;
-
-  line-height: 1;
-
-  letter-spacing: -1.5px;
-
-  margin-bottom: 17px;
-}
-
-.feature-copy p {
-  max-width: 420px;
-
-  color: #777;
-
-  font-size: 14px;
-
-  line-height: 1.7;
-}
-
-.feature-copy .feature-line {
-  width: 100%;
-
-  max-width: 400px;
-
-  height: 1px;
-
-  margin-top: 35px;
-
-  background: #e9e4e0;
-}
-
-.feature-copy .feature-label {
-  display: inline-block;
-
-  margin-top: 17px;
-
-  color: #aaa;
-
-  font-size: 9px;
-
-  font-weight: 800;
-
-  letter-spacing: 1.5px;
-}
-
-
-/* =========================================================
-   FOOD CARD VISUAL
-========================================================= */
-
-.food-card-visual {
-  min-height: 500px;
-
-  position: relative;
-
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
-}
-
-.food-card-glow {
-  position: absolute;
-
-  width: 300px;
-  height: 300px;
-
-  border-radius: 50%;
-
-  background: rgba(255, 115, 0, 0.14);
-
-  filter: blur(75px);
-}
-
-.food-card-image {
-  width: min(570px, 100%);
-
-  position: relative;
-
-  z-index: 3;
-
-  object-fit: contain;
-
-  filter:
-    drop-shadow(
-      0 30px 35px rgba(0, 0, 0, 0.10)
-    )
-    drop-shadow(
-      0 10px 25px rgba(255, 80, 20, 0.08)
-    );
-
-  transform: rotate(-2deg);
-
-  transition:
-    transform 0.5s ease,
-    filter 0.5s ease;
-}
-
-.feature-showcase:hover .food-card-image {
-  transform:
-    rotate(0deg)
-    translateY(-5px);
-
-  filter:
-    drop-shadow(
-      0 38px 45px rgba(0, 0, 0, 0.13)
-    )
-    drop-shadow(
-      0 15px 30px rgba(255, 80, 20, 0.10)
-    );
-}
-
-
-/* =========================================================
-   FEATURE ICON
-========================================================= */
-
-.feature-icon {
-  width: 55px;
-  height: 55px;
-
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
-
-  border-radius: 16px;
-
-  background:
-    linear-gradient(
-      135deg,
-      #fff1e8,
-      #ffffff
-    );
-
-  border: 1px solid #f1e5df;
-
-  font-size: 25px;
-}
-
-
-/* =========================================================
-   FEATURE GRID
-========================================================= */
-
-.feature-grid {
-  display: grid;
-
-  grid-template-columns: 1fr 1fr;
-
-  gap: 18px;
-}
-
-.feature-card {
-  min-height: 330px;
-
-  position: relative;
-
-  padding: 32px;
-
-  overflow: hidden;
-
-  border-radius: 24px;
-
-  background:
-    linear-gradient(
-      145deg,
-      #ffffff,
-      #fffaf7
-    );
-
-  border: 1px solid #eeeeee;
-
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
-}
-
-.feature-card:hover {
-  transform: translateY(-7px);
-
-  box-shadow:
-    0 25px 55px rgba(0, 0, 0, 0.08);
-}
-
-.feature-card-wide {
-  grid-column: span 2;
-
-  min-height: 270px;
-}
-
-.feature-number {
-  position: absolute;
-
-  top: 25px;
-  right: 28px;
-
-  color: #ddd;
-
-  font-size: 12px;
-  font-weight: 800;
-}
-
-.feature-card .feature-icon {
-  margin-bottom: 35px;
-}
-
-.feature-card h3 {
-  font-size: 24px;
-
-  letter-spacing: -0.8px;
-
-  margin-bottom: 13px;
-}
-
-.feature-card p {
-  max-width: 460px;
-
-  color: #777;
-
-  font-size: 14px;
-
-  line-height: 1.7;
-}
-
-.feature-line {
-  width: 100%;
-
-  height: 1px;
-
-  margin-top: 35px;
-
-  background: #eeeeee;
-}
-
-.feature-label {
-  display: inline-block;
-
-  margin-top: 17px;
-
-  color: #aaa;
-
-  font-size: 9px;
-  font-weight: 800;
-
-  letter-spacing: 1.5px;
-}
-
-
-/* =========================================================
-   DARK SHOWCASE
-========================================================= */
-
-.showcase {
-  position: relative;
-
-  overflow: hidden;
-
-  padding: 145px 0;
-
-  color: white;
-
-  background:
-    radial-gradient(
-      circle at 80% 50%,
-      rgba(255, 115, 0, 0.14),
-      transparent 30%
-    ),
-    #090909;
-}
-
-.showcase-glow {
-  position: absolute;
-
-  width: 600px;
-  height: 600px;
-
-  border-radius: 50%;
-
-  right: -300px;
-  top: 10%;
-
-  background: rgba(255, 22, 22, 0.09);
-
-  filter: blur(110px);
-}
-
-.showcase-content {
-  display: grid;
-
-  grid-template-columns: 0.9fr 1.1fr;
-
-  align-items: center;
-
-  gap: 70px;
-}
-
-.showcase-text {
-  max-width: 540px;
-
-  position: relative;
-
-  z-index: 5;
-}
-
-.showcase-text h2 {
-  font-size: clamp(43px, 5vw, 68px);
-
-  line-height: 0.98;
-
-  letter-spacing: -3.5px;
-
-  margin: 15px 0 23px;
-}
-
-.showcase-text > p {
-  max-width: 500px;
-
-  color: #999;
-
-  font-size: 16px;
-
-  line-height: 1.75;
-
-  margin-bottom: 40px;
-}
-
-.showcase-points {
-  display: flex;
-
-  flex-direction: column;
-
-  gap: 22px;
-}
-
-.showcase-point {
-  display: flex;
-
-  align-items: flex-start;
-
-  gap: 18px;
-}
-
-.showcase-point > strong {
-  color: #ff5a28;
-
-  font-size: 11px;
-
-  letter-spacing: 1px;
-
-  padding-top: 3px;
-}
-
-.showcase-point h3 {
-  font-family: "DM Sans", sans-serif;
-
-  font-size: 15px;
-
-  margin-bottom: 5px;
-}
-
-.showcase-point p {
-  color: #666;
-
-  font-size: 12px;
-}
-
-
-/* =========================================================
-   CART
-========================================================= */
-
-.cart-visual {
-  min-height: 650px;
-
-  position: relative;
-
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
-}
-
-.cart-glow {
-  position: absolute;
-
-  width: 420px;
-  height: 420px;
-
-  border-radius: 50%;
-
-  background:
-    radial-gradient(
-      circle,
-      rgba(255, 90, 35, 0.25),
-      transparent 68%
-    );
-
-  filter: blur(25px);
-}
-
-.cart-image {
-  width: min(475px, 90%);
-
-  position: relative;
-
-  z-index: 3;
-
-  object-fit: contain;
-
-  filter:
-    drop-shadow(
-      0 45px 55px rgba(0, 0, 0, 0.65)
-    )
-    drop-shadow(
-      0 10px 30px rgba(255, 70, 20, 0.14)
-    );
-
-  transform: rotate(4deg);
-
-  transition:
-    transform 0.5s ease;
-}
-
-.cart-visual:hover .cart-image {
-  transform:
-    rotate(1deg)
-    translateY(-7px);
-}
-
-
-/* =========================================================
-   TRACKING
-========================================================= */
-
-.tracking-section {
-  position: relative;
-
-  overflow: hidden;
-
-  padding: 145px 0;
-
-  background: #ffffff;
-
-  color: var(--text);
-}
-
-.tracking-container {
-  display: grid;
-
-  grid-template-columns: 0.85fr 1.15fr;
-
-  align-items: center;
-
-  gap: 100px;
-}
-
-.tracking-visual {
-  min-height: 600px;
-
-  position: relative;
-
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
-}
-
-.tracking-glow {
-  position: absolute;
-
-  width: 330px;
-  height: 330px;
-
-  border-radius: 50%;
-
-  background:
-    radial-gradient(
-      circle,
-      rgba(255, 115, 0, 0.15),
-      transparent 68%
-    );
-
-  filter: blur(55px);
-}
-
-.tracking-image {
-  width: min(310px, 85%);
-
-  position: relative;
-
-  z-index: 3;
-
-  object-fit: contain;
-
-  filter:
-    drop-shadow(
-      0 35px 45px rgba(0, 0, 0, 0.14)
-    );
-}
-
-.tracking-content {
-  max-width: 570px;
-}
-
-.tracking-content h2 {
-  font-size: clamp(45px, 5vw, 68px);
-
-  line-height: 0.98;
-
-  letter-spacing: -3px;
-
-  margin: 15px 0 22px;
-}
-
-.tracking-content > p {
-  max-width: 500px;
-
-  color: #777;
-
-  font-size: 16px;
-
-  line-height: 1.7;
-
-  margin-bottom: 38px;
-}
-
-.tracking-stat {
-  display: flex;
-
-  align-items: flex-start;
-
-  gap: 18px;
-
-  padding: 18px 0;
-
-  border-top: 1px solid #eeeeee;
-}
-
-.tracking-stat:last-child {
-  border-bottom: 1px solid #eeeeee;
-}
-
-.tracking-stat > span {
-  color: var(--red);
-
-  font-size: 11px;
-  font-weight: 800;
-
-  padding-top: 3px;
-}
-
-.tracking-stat strong {
-  display: block;
-
-  font-size: 14px;
-  font-weight: 800;
-
-  margin-bottom: 4px;
-}
-
-.tracking-stat small {
-  color: #999;
-
-  font-size: 11px;
-}
-
-
-/* =========================================================
-   DELIVERY
-========================================================= */
-
-.delivery-section {
-  position: relative;
-
-  overflow: hidden;
-
-  padding: 120px 0;
-
-  background:
-    radial-gradient(
-      circle at 15% 50%,
-      rgba(255, 22, 22, 0.07),
-      transparent 30%
-    ),
-    #fffaf7;
-}
-
-.delivery-container {
-  min-height: 500px;
-
-  display: grid;
-
-  grid-template-columns: 0.9fr 1.1fr;
-
-  align-items: center;
-
-  gap: 50px;
-}
-
-.delivery-content {
-  position: relative;
-
-  z-index: 5;
-}
-
-.delivery-content h2 {
-  max-width: 600px;
-
-  font-size: clamp(45px, 5vw, 70px);
-
-  line-height: 0.98;
-
-  letter-spacing: -3.5px;
-
-  margin: 15px 0 22px;
-}
-
-.delivery-content > p {
-  max-width: 520px;
-
-  color: #777;
-
-  font-size: 16px;
-
-  line-height: 1.7;
-
-  margin-bottom: 30px;
-}
-
-.delivery-pill {
-  display: inline-flex;
-
-  align-items: center;
-
-  gap: 9px;
-
-  padding: 10px 15px;
-
-  border-radius: 100px;
-
-  background: white;
-
-  border: 1px solid #eee;
-
-  color: #777;
-
-  font-size: 11px;
-  font-weight: 700;
-
-  box-shadow:
-    0 10px 25px rgba(0, 0, 0, 0.04);
-}
-
-.delivery-pill span {
-  width: 7px;
-  height: 7px;
-
-  border-radius: 50%;
-
-  background: var(--red);
-
-  box-shadow:
-    0 0 0 4px rgba(255, 22, 22, 0.08);
-}
-
-
-/* =========================================================
-   DELIVERY CHARACTER
-========================================================= */
-
-.delivery-visual {
-  min-height: 500px;
-
-  position: relative;
-
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
-}
-
-.delivery-circle {
-  width: 390px;
-  height: 390px;
-
-  position: absolute;
-
-  border-radius: 50%;
-
-  background:
-    radial-gradient(
-      circle at 40% 35%,
-      #ffffff,
-      #fff0e8 55%,
-      #ffd9c5
-    );
-
-  box-shadow:
-    0 35px 90px rgba(255, 66, 15, 0.13);
-
-  border:
-    1px solid rgba(255, 115, 0, 0.12);
-}
-
-.delivery-image {
-  width: min(540px, 100%);
-
-  position: relative;
-
-  z-index: 3;
-
-  object-fit: contain;
-
-  filter:
-    drop-shadow(
-      0 30px 30px rgba(0, 0, 0, 0.13)
-    );
-
-  transform: translateX(15px);
-
-  animation:
-    scooterFloat 5s ease-in-out infinite;
-}
-
-
-/* =========================================================
-   ABOUT
-========================================================= */
-
-.about {
-  padding: 145px 0;
-
-  background: #ffffff;
-}
-
-.about-layout {
-  display: grid;
-
-  grid-template-columns: 0.35fr 1fr;
-
-  gap: 70px;
-}
-
-.about-label {
-  color: var(--red);
-
-  font-size: 11px;
-  font-weight: 800;
-
-  letter-spacing: 2px;
-}
-
-.about-content {
-  max-width: 780px;
-}
-
-.about-content h2 {
-  font-size: clamp(45px, 6vw, 74px);
-
-  line-height: 0.98;
-
-  letter-spacing: -3.5px;
-
-  margin-bottom: 30px;
-}
-
-.about-content p {
-  max-width: 690px;
-
-  color: #707070;
-
-  font-size: 16px;
-
-  line-height: 1.75;
-
-  margin-bottom: 18px;
-}
-
-
-/* =========================================================
-   DOWNLOAD CTA
-========================================================= */
-
-.download {
-  position: relative;
-
-  padding: 0 0 120px;
-
-  background: #ffffff;
-}
-
-.download-card {
-  min-height: 430px;
-
-  position: relative;
-
-  overflow: hidden;
-
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
-
-  text-align: center;
-
-  padding: 70px 40px;
-
-  border-radius: 34px;
-
-  background:
-    radial-gradient(
-      circle at 15% 30%,
-      rgba(255, 255, 255, 0.16),
-      transparent 25%
-    ),
-    radial-gradient(
-      circle at 85% 80%,
-      rgba(255, 255, 255, 0.12),
-      transparent 25%
-    ),
-    linear-gradient(
-      135deg,
-      #e91212,
-      #ff7300
-    );
-
-  box-shadow:
-    0 35px 85px rgba(255, 66, 15, 0.23);
-}
-
-.download-card::before,
-.download-card::after {
-  content: "";
-
-  position: absolute;
-
-  border-radius: 50%;
-
-  border:
-    1px solid rgba(255, 255, 255, 0.15);
-
-  pointer-events: none;
-}
-
-.download-card::before {
-  width: 430px;
-  height: 430px;
-
-  left: -190px;
-  top: -185px;
-}
-
-.download-card::after {
-  width: 320px;
-  height: 320px;
-
-  right: -140px;
-  bottom: -160px;
-}
-
-.download-content {
-  position: relative;
-
-  z-index: 5;
-
-  max-width: 820px;
-}
-
-.download-content .eyebrow {
-  color: rgba(255, 255, 255, 0.72);
-}
-
-.download-content h2 {
-  max-width: 780px;
-
-  margin: 15px auto;
-
-  color: white;
-
-  font-size: clamp(43px, 6vw, 70px);
-
-  line-height: 0.98;
-
-  letter-spacing: -3.5px;
-}
-
-.download-content h2 span {
-  display: block;
-
-  opacity: 0.76;
-}
-
-.download-content p {
-  color: rgba(255, 255, 255, 0.82);
-
-  font-size: 16px;
-
-  margin-bottom: 30px;
-}
-
-.download-button {
-  background: white;
-
-  color: var(--red);
-
-  box-shadow:
-    0 15px 35px rgba(0, 0, 0, 0.15);
-}
-
-.download-button:hover {
-  box-shadow:
-    0 20px 45px rgba(0, 0, 0, 0.22);
-}
-
-.download-content small {
-  display: block;
-
-  color: rgba(255, 255, 255, 0.6);
-
-  font-size: 10px;
-
-  margin-top: 18px;
-}
-
-
-/* =========================================================
-   DOWNLOAD CHARACTER
-========================================================= */
-
-.download-character {
-  position: absolute;
-
-  right: -50px;
-  bottom: -55px;
-
-  width: 280px;
-
-  opacity: 0.24;
-
-  z-index: 2;
-
-  pointer-events: none;
-}
-
-.download-character img {
-  width: 100%;
-
-  object-fit: contain;
-
-  transform: scaleX(-1);
-}
-
-
-/* =========================================================
-   FOOTER
-========================================================= */
-
-footer {
-  padding: 60px 0 30px;
-
-  color: white;
-
-  background: #090909;
-}
-
-.footer-inner {
-  display: grid;
-
-  grid-template-columns: 1fr auto;
-
-  gap: 45px;
-}
-
-.footer-brand {
-  display: flex;
-
-  align-items: center;
-
-  gap: 13px;
-}
-
-.footer-brand img {
-  width: 45px;
-  height: 45px;
-
-  object-fit: contain;
-}
-
-.footer-brand strong {
-  display: block;
-
-  font-family: "Agrandir", sans-serif;
-
-  font-size: 17px;
-  font-weight: 700;
-}
-
-.footer-brand span {
-  display: block;
-
-  color: #666;
-
-  font-size: 11px;
-
-  margin-top: 4px;
-}
-
-.footer-links {
-  display: flex;
-
-  align-items: center;
-
-  gap: 25px;
-
-  color: #888;
-
-  font-size: 12px;
-}
-
-.footer-links a {
-  transition: color 0.2s ease;
-}
-
-.footer-links a:hover {
-  color: white;
-}
-
-.footer-bottom {
-  grid-column: 1 / -1;
-
-  padding-top: 25px;
-
-  border-top:
-    1px solid rgba(255, 255, 255, 0.08);
-
-  display: flex;
-
-  align-items: center;
-
-  justify-content: space-between;
-
-  color: #555;
-
-  font-size: 11px;
-}
-
-.footer-bottom div {
-  display: flex;
-
-  gap: 20px;
-}
-
-.footer-bottom a:hover {
-  color: white;
-}
-
-
-/* =========================================================
-   ANIMATIONS
-========================================================= */
-
-@keyframes heroFloat {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-12px);
-  }
-}
-
-@keyframes floatCard {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-9px);
-  }
-}
-
-@keyframes scooterFloat {
-  0%,
-  100% {
-    transform: translate(15px, 0);
-  }
-
-  50% {
-    transform: translate(15px, -9px);
-  }
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-
-/* =========================================================
-   TABLET
-========================================================= */
-
-@media (max-width: 1000px) {
-
-  .hero-container {
-    grid-template-columns: 1fr;
-
-    text-align: center;
-
-    padding-top: 70px;
-    padding-bottom: 70px;
-  }
-
-  .hero-content {
-    margin: 0 auto;
-  }
-
-  .hero-description {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .hero-actions {
-    justify-content: center;
-  }
-
-  .hero-visual {
-    min-height: 600px;
-  }
-
-  .hero-app-image {
-    width: min(410px, 75%);
-  }
-
-  .hero-food-card {
-    left: 8%;
-  }
-
-  .hero-order-card {
-    right: 8%;
-  }
-
-  .feature-showcase {
-    grid-template-columns: 1fr;
-
-    padding-top: 30px;
-  }
-
-  .feature-copy {
-    text-align: center;
-
-    padding: 50px 45px 20px;
-  }
-
-  .feature-copy p,
-  .feature-copy .feature-line {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .food-card-visual {
-    min-height: 450px;
-  }
-
-  .showcase-content {
-    grid-template-columns: 1fr;
-
-    gap: 70px;
-  }
-
-  .showcase-text {
-    max-width: 650px;
-
-    margin: 0 auto;
-
-    text-align: center;
-  }
-
-  .showcase-text > p {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .showcase-points {
-    text-align: left;
-  }
-
-  .cart-visual {
-    min-height: 600px;
-  }
-
-  .tracking-container {
-    grid-template-columns: 1fr;
-
-    gap: 50px;
-  }
-
-  .tracking-content {
-    max-width: 650px;
-
-    margin: 0 auto;
-  }
-
-  .delivery-container {
-    grid-template-columns: 1fr;
-
-    gap: 30px;
-  }
-
-  .delivery-content {
-    text-align: center;
-
-    margin: 0 auto;
-  }
-
-  .delivery-content > p {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .delivery-visual {
-    min-height: 450px;
-  }
-
-  .about-layout {
-    grid-template-columns: 1fr;
-
-    gap: 25px;
-  }
-
-  .about-label {
-    margin-bottom: 5px;
-  }
-}
-
-
-/* =========================================================
-   MOBILE
-========================================================= */
-
-@media (max-width: 650px) {
-
-  .container {
-    width: min(92%, 1180px);
-  }
-
-  /* IMPORTANT:
-     Keep Fodio gradient on mobile too.
-  */
-
-  .navbar {
-    position: absolute !important;
-
-    top: 0 !important;
-    left: 0 !important;
-
-    background: linear-gradient(
-      135deg,
-      #ff1616 0%,
-      #ff7300 100%
-    ) !important;
-
-    border-bottom: 1px solid rgba(255, 255, 255, 0.20);
-
-    box-shadow:
-      0 8px 25px rgba(255, 60, 15, 0.18);
-
-    backdrop-filter: none !important;
-    -webkit-backdrop-filter: none !important;
-  }
-
-  .nav-inner {
-    height: 70px;
-  }
-
-  .brand {
-    font-size: 20px;
-
-    color: #ffffff !important;
-  }
-
-  .brand img {
-    width: 39px;
-    height: 39px;
-  }
-
-  .nav-links {
-    display: none;
-  }
-
-  .hero {
-    padding-top: 70px;
-  }
-
-  .hero-container {
-    padding-top: 55px;
-    padding-bottom: 60px;
-  }
-
-  .hero-logo {
-    width: 64px;
-    height: 64px;
-  }
-
-  .hero h1 {
-    font-size: clamp(44px, 13vw, 61px);
-
-    letter-spacing: -2.8px;
-  }
-
-  .hero-description {
-    font-size: 15px;
-  }
-
-  .hero-actions {
-    flex-direction: column;
-
-    width: 100%;
-  }
-
-  .primary-button,
-  .secondary-button {
-    width: 100%;
-  }
-
-  .hero-visual {
-    min-height: 520px;
-  }
-
-  .hero-app-image {
-    width: 82%;
-  }
-
-  .hero-ring-one {
-    width: 380px;
-    height: 380px;
-  }
-
-  .hero-ring-two {
-    width: 310px;
-    height: 310px;
-  }
-
-  .hero-food-card {
-    left: -4px;
-    top: 90px;
-  }
-
-  .hero-order-card {
-    right: -4px;
-    bottom: 90px;
-  }
-
-  .hero-floating-card {
-    transform: scale(0.88);
-  }
-
-  .trust-inner {
-    grid-template-columns: 1fr 1fr;
-
-    padding: 22px 0;
-  }
-
-  .trust-inner > div {
-    padding: 14px;
-
-    border-right: none;
-  }
-
-  .trust-inner > div:first-child {
-    padding-left: 14px;
-  }
-
-  .features,
-  .showcase,
-  .tracking-section,
-  .about {
-    padding: 90px 0;
-  }
-
-  .section-heading {
-    margin-bottom: 45px;
-  }
-
-  .section-heading h2,
-  .showcase-text h2,
-  .tracking-content h2,
-  .about-content h2 {
-    letter-spacing: -2.2px;
-  }
-
-  .section-heading p {
-    font-size: 15px;
-  }
-
-  .feature-showcase {
-    border-radius: 24px;
-
-    margin-bottom: 55px;
-  }
-
-  .feature-copy {
-    padding: 45px 25px 10px;
-  }
-
-  .feature-copy h3 {
-    font-size: 30px;
-  }
-
-  .food-card-visual {
-    min-height: 330px;
-  }
-
-  .food-card-image {
-    width: 105%;
-  }
-
-  .feature-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .feature-card-wide {
-    grid-column: auto;
-  }
-
-  .feature-card {
-    min-height: 290px;
-
-    padding: 28px;
-  }
-
-  .showcase {
-    padding: 95px 0;
-  }
-
-  .cart-visual {
-    min-height: 480px;
-  }
-
-  .cart-image {
-    width: 88%;
-
-    transform: rotate(2deg);
-  }
-
-  .tracking-visual {
-    min-height: 480px;
-  }
-
-  .tracking-image {
-    width: 75%;
-  }
-
-  .tracking-content h2 {
-    font-size: 45px;
-  }
-
-  .tracking-content > p {
-    font-size: 15px;
-  }
-
-  .delivery-section {
-    padding: 90px 0;
-  }
-
-  .delivery-content h2 {
-    font-size: 45px;
-
-    letter-spacing: -2.3px;
-  }
-
-  .delivery-content > p {
-    font-size: 15px;
-  }
-
-  .delivery-visual {
-    min-height: 370px;
-  }
-
-  .delivery-circle {
-    width: 290px;
-    height: 290px;
-  }
-
-  .delivery-image {
-    width: 115%;
-
-    transform: translateX(5px);
-  }
-
-  .download {
-    padding-bottom: 80px;
-  }
-
-  .download-card {
-    min-height: 390px;
-
-    padding: 55px 20px;
-
-    border-radius: 25px;
-  }
-
-  .download-content h2 {
-    font-size: 45px;
-
-    letter-spacing: -2.3px;
-  }
-
-  .download-content p {
-    font-size: 15px;
-
-    line-height: 1.6;
-  }
-
-  .download-character {
-    width: 210px;
-
-    right: -65px;
-
-    bottom: -35px;
-  }
-
-  .footer-inner {
-    grid-template-columns: 1fr;
-
-    text-align: center;
-  }
-
-  .footer-brand {
-    justify-content: center;
-  }
-
-  .footer-links {
-    justify-content: center;
-
-    flex-wrap: wrap;
-  }
-
-  .footer-bottom {
-    grid-column: auto;
-
-    flex-direction: column;
-
-    gap: 15px;
-
-    line-height: 1.6;
-  }
-}
-
-
-/* =========================================================
-   VERY SMALL PHONES
-========================================================= */
-
-@media (max-width: 390px) {
-
-  .hero h1 {
-    font-size: 43px;
-  }
-
-  .hero-visual {
-    min-height: 470px;
-  }
-
-  .hero-app-image {
-    width: 86%;
-  }
-
-  .hero-floating-card {
-    transform: scale(0.78);
-  }
-
-  .hero-food-card {
-    left: -25px;
-  }
-
-  .hero-order-card {
-    right: -25px;
-  }
-
-  .food-card-visual {
-    min-height: 280px;
-  }
-
-  .food-card-image {
-    width: 112%;
-  }
-
-  .cart-visual {
-    min-height: 420px;
-  }
-
-  .tracking-image {
-    width: 82%;
-  }
-
-  .delivery-circle {
-    width: 260px;
-    height: 260px;
-  }
-
-  .delivery-image {
-    width: 125%;
-  }
-
-  .download-content h2 {
-    font-size: 40px;
-  }
-}
