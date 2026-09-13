@@ -554,24 +554,17 @@ h3 span {
 }
 
 .hero-app-image {
-  width: min(570px, 92%);
-
+  width: min(350px, 78%);
+  height: auto;
   position: relative;
-
   z-index: 5;
-
   object-fit: contain;
 
   filter:
-    drop-shadow(
-      0 42px 45px rgba(0, 0, 0, 0.17)
-    )
-    drop-shadow(
-      0 15px 35px rgba(255, 65, 15, 0.12)
-    );
+    drop-shadow(0 35px 50px rgba(0, 0, 0, 0.18))
+    drop-shadow(0 10px 30px rgba(255, 80, 20, 0.13));
 
-  animation:
-    heroFloat 6s ease-in-out infinite;
+  animation: heroFloat 6s ease-in-out infinite;
 }
 
 .hero-orbit {
@@ -974,24 +967,20 @@ h3 span {
 }
 
 .food-card-image {
-  width: min(720px, 115%);
-
+  width: min(440px, 82%);
   position: relative;
-
   z-index: 3;
+  object-fit: contain;
 
   filter:
-    drop-shadow(
-      0 38px 35px rgba(0, 0, 0, 0.12)
-    );
+    drop-shadow(0 30px 35px rgba(0, 0, 0, 0.10))
+    drop-shadow(0 10px 25px rgba(255, 80, 20, 0.08));
 
-  transform:
-    rotate(-2deg)
-    translateX(20px);
+  transform: rotate(-2deg);
 
   transition:
-    transform 0.6s ease,
-    filter 0.6s ease;
+    transform 0.5s ease,
+    filter 0.5s ease;
 }
 
 .feature-showcase:hover .food-card-image {
