@@ -170,12 +170,16 @@ button {
 
   z-index: 1000;
 
-  background: rgba(255, 250, 247, 0.80);
+  background: linear-gradient(
+    135deg,
+    #ff1616,
+    #ff7300
+  );
 
-  backdrop-filter: blur(22px);
-  -webkit-backdrop-filter: blur(22px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
 
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow:
+    0 8px 30px rgba(255, 60, 15, 0.16);
 }
 
 .nav-inner {
@@ -196,6 +200,8 @@ button {
   font-weight: 700;
 
   letter-spacing: -0.7px;
+
+  color: #ffffff;
 }
 
 .brand img {
@@ -218,7 +224,7 @@ button {
 }
 
 .nav-links > a:not(.nav-button) {
-  color: #5f5f5f;
+  color: rgba(255, 255, 255, 0.88);
 
   transition:
     color 0.25s ease,
@@ -226,7 +232,7 @@ button {
 }
 
 .nav-links > a:not(.nav-button):hover {
-  color: var(--red);
+  color: #ffffff;
 
   transform: translateY(-1px);
 }
@@ -236,12 +242,12 @@ button {
 
   border-radius: 13px;
 
-  color: white;
+  color: #ff1616;
 
-  background: var(--gradient);
+  background: #ffffff;
 
   box-shadow:
-    0 10px 25px rgba(255, 66, 15, 0.18);
+    0 8px 22px rgba(0, 0, 0, 0.12);
 
   transition:
     transform 0.25s ease,
@@ -252,8 +258,9 @@ button {
   transform: translateY(-2px);
 
   box-shadow:
-    0 15px 30px rgba(255, 66, 15, 0.27);
+    0 12px 28px rgba(0, 0, 0, 0.18);
 }
+
 
 
 /* =========================================================
